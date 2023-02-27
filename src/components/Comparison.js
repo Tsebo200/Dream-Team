@@ -10,10 +10,10 @@ const Compare = () => {
 
     useEffect(() => {
 
-        axios.get('https://www.balldontlie.io/api/v1/players')
+        axios.get('https://www.balldontlie.io/api/v1/stats')
         .then((res)=> {
             setApi(res.data)
-            console.log(res)
+            console.log(res.data.data[4])
 
         })
         .catch((err) => {
