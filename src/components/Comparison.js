@@ -11,15 +11,16 @@ const Compare = () => {
 
     useEffect(() => {
 
-        // When using link from postman remmeber:
+        // When using link from postman remember:
         //  to add ---> www.
         // after --> //
         axios.get('https://www.balldontlie.io/api/v1/players')
         // https://www.balldontlie.io/api/v1/players
         .then((res)=> {
-            setApi(res.data)
+            setApi(res.data.data[4].first_name)
             console.log(res.data.data[4].first_name)
-              console.log("Length", res.data.length);
+            // console.log()
+            // console.log("Length", res.data.length);
 
         })
         .catch((err) => {
