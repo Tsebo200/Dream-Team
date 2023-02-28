@@ -1,14 +1,16 @@
 import React from 'react';
 // Tree Shaking import 
 import { Chart, Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title } from 'chart.js';
+import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 {/* <Chart type='line' data={chartData} /> */}
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const data = {
+const ReactChart = () => {
+
+
+ const data = {
   labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
   datasets: [
     {
@@ -35,9 +37,8 @@ export const data = {
   ],
 };
 
-export function App() {
   return <Pie data={data} />;
+
 }
 
-
-
+export default ReactChart

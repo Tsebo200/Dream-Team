@@ -35,3 +35,18 @@
 //     })
     
 // }, [])
+
+
+
+
+
+
+
+
+// Tree Shaking import with ReactChart
+// import { Chart } from 'react-chartjs-2';
+// import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title } from 'chart.js';
+
+// ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
+
+// <Chart type='line' data={chartData} />
