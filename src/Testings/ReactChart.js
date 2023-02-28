@@ -9,6 +9,7 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const ReactChart = () => {
 
+// Use a promise to import data into the chart?
 
  const data = {
   labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -37,8 +38,20 @@ const ReactChart = () => {
   ],
 };
 
+
+
+
+
+
+
+// Line Graph
+
   return <Pie data={data} />;
 
 }
 
 export default ReactChart
+
+
+
+
