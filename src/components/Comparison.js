@@ -18,7 +18,8 @@ const Compare = () => {
         // https://www.balldontlie.io/api/v1/players
         .then((res)=> {
             setApi(res.data)
-            console.log(res.data.data[4])
+            console.log(res.data.data[4].first_name)
+              console.log("Length", res.data.length);
 
         })
         .catch((err) => {
@@ -30,7 +31,11 @@ const Compare = () => {
 
 
     return(
-        <div className="nav-bar"></div>
+        <div className="nav-bar">
+        <p>
+            Here is {api}
+        </p>
+        </div>
     )
 }
 export default Compare
