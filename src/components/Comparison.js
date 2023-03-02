@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import './comparison.css';
+import './styles.sass';
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -19,7 +20,7 @@ const Compare = () => {
         .then((res)=> {
             setApi(res.data.data[4].first_name)
             console.log(res.data.data[4].first_name)
-            // console.log()
+            console.log(res.data.data[4])
             // console.log("Length", res.data.length);
 
         })
