@@ -33,11 +33,11 @@ const Compare = () => {
 
 
     return(
-        <div className="nav-bar">
-        <p>
-            Here is {api}
-        </p>
-        </div>
+            <div className="nav-bar">
+            <p>
+                Here is {api}
+            </p>
+            </div>
     )
 }
 export default Compare

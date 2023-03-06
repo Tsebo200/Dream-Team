@@ -10,7 +10,6 @@ import Landing from './components/Landing';
 function App() {
   return (
     <Routes>
-      {/* <Route path='/' element= {</>} /> */}
         <Route path='/' element= {<Landing/>} />
         <Route path='/compare' element= {<Compare/>} />
         <Route path='/chart' element = {<ReactChart/>} />
