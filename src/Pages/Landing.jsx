@@ -9,19 +9,22 @@ import '../Sass/styles.sass';
 const Landing = () => {
 
     return(
-        <div className="main-container">
+        <div className="mainContainer">
         <div className="header">
             <div className="logo"></div>
-            <div className="spacing-one"></div>
+            <div className="spacingOne"></div>
            <h1>Dream Team</h1>
-           <div className="user-icon"></div>
+           <div className="userIcon"></div>
         </div>
 
-        <div className="vert-nav-bar">
+        <div className="vertNavBar">
 
-            <Link to="/">Dashboard</Link>
-            <Link to="/compare">Comparison</Link>
-            <Link to="/time">Timeline</Link>
+        <ion-icon name="basketball-outline"></ion-icon>
+            <Link to="/"><h2>Dashboard</h2></Link>
+            <Link to="/compare"><h2>Comparison</h2></Link>
+            <Link to="/time"><h2>Timeline</h2></Link>
+
+            <Link to="/signout"><h2 className="signOutText">Sign Out</h2></Link>
 
         </div>
         <div className="main-content"></div>
