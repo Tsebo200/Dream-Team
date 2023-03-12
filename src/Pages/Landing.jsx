@@ -10,8 +10,13 @@ const Landing = () => {
 
     return(
         <div className="main-container">
-        <div className="header"></div>
-        <div className="nav-bar"></div>
+        <div className="header">
+            <div className="logo"></div>
+            <div className="spacing-one"></div>
+           <h1>Dream Team</h1>
+           <div className="user-icon"></div>
+        </div>
+        <div className="vert-nav-bar"></div>
         <div className="main-content"></div>
         </div>
     )
