@@ -8,6 +8,9 @@ import '../Sass/styles.sass';
 
 const Landing = () => {
 
+const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const leagueLeaders = [1, 2, 3]
+
     return(
         <div className="mainContainer">
         <div className="header">
@@ -28,14 +31,26 @@ const Landing = () => {
             <Link to="/time"><h2> <ion-icon name="basketball-outline"></ion-icon>Timeline</h2></Link>
             <div className="navSpacerTwo"></div>
             <Link to="/signedout"><h2 className="signOutText"><ion-icon  name="log-out-outline"></ion-icon>Sign Out</h2></Link>
+        </div>{/* VerNavBar Closing Tag */}
 
-        </div>
+
         <div className="main-content">
             <h2>League Leaders</h2>
-            <div class
+            <div className="leagueLeadersHolder">
+                {leagueLeaders.map((number) => {
+                    return (
+                    <>
+                    <div className="cardContainer"></div>
+                    </>
+                    );
+                })}
+            </div>
+            </div>
+
+
+        {/* Main Container closing */}
         </div>
-        </div>
-    )
+    );
 
 }
 export default Landing
