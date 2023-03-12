@@ -30,7 +30,10 @@ const Landing = () => {
             <Link to="/signedout"><h2 className="signOutText"><ion-icon  name="log-out-outline"></ion-icon>Sign Out</h2></Link>
 
         </div>
-        <div className="main-content"></div>
+        <div className="main-content">
+            <h2>League Leaders</h2>
+            <div class
+        </div>
         </div>
     )
 
