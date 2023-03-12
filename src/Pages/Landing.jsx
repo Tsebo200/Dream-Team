@@ -16,7 +16,14 @@ const Landing = () => {
            <h1>Dream Team</h1>
            <div className="user-icon"></div>
         </div>
-        <div className="vert-nav-bar"></div>
+
+        <div className="vert-nav-bar">
+
+            <Link to="/">Dashboard</Link>
+            <Link to="/compare">Comparison</Link>
+            <Link to="/time">Timeline</Link>
+
+        </div>
         <div className="main-content"></div>
         </div>
     )

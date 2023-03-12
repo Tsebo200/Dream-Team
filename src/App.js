@@ -8,6 +8,8 @@ import { Route, Routes } from 'react-router-dom';
 
 
 import Landing from './Pages/Landing';
+import Compare from './Pages/Compare';
+import Time from './Pages/Time';
 
 
 function App() {
@@ -15,6 +17,9 @@ function App() {
     <div className="App">
     <Routes>
         <Route path='/' element= {<Landing />} />
+        <Route path='/compare' element= {<Compare />} />
+        <Route path='/time' element= {<Time />} />
+
 
 
 
