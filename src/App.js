@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import Landing from './Pages/Landing';
 import Compare from './Pages/Compare';
 import Time from './Pages/Time';
+import SignedOut from './Pages/SignedOut';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element= {<Landing />} />
         <Route path='/compare' element= {<Compare />} />
         <Route path='/time' element= {<Time />} />
+        <Route path='/signedout' element= {<SignedOut />} />
 
 
 

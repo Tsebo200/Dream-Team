@@ -1,14 +1,17 @@
 html
     background: #2b2b2b
+    h2
+        font-family: Avenir 
 
-    
+// Section 1
 .mainContainer
     width: 100vw
     height: 100vh
     
+
     .header
-        width: 100%
-        height: 20%
+        width: 100vw
+        height: 15%
         background: #818181
         display: inline-flex
         flex-direction: row
@@ -18,8 +21,8 @@ html
         align-items: center
 
         .logo
-            width: 100px
-            height: 100px
+            width: 90px
+            height: 90px
             border-radius: 100%
             background: #464646
             margin-left: 5%
@@ -35,24 +38,29 @@ html
             border-radius: 100%
             margin-left: 60%
            
+// Section 2
+.vertNavBar
+    width: 20%
+    height: 85%
+    background: #464646
+    float: left
+
+    a
+        text-decoration: none
+
+    a:active,a:visited 
+        color: white
 
 
-    .vertNavBar
-        width: 30%
-        height: 80%
-        background: #464646
-        float: left
 
-        a
-            text-decoration: none
+ion-icon
+    font-size: 30px
 
-        a:active,a:visited 
-            color: white
 
-    .main-content
-        width: 70%
-        height: 80%
-        background: green
-        float: left
+.main-content
+    width: 80%
+    height: 85%
+    background: green
+    float: left
 
 
