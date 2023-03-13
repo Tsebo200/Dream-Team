@@ -11,11 +11,13 @@ import Landing from './Pages/Landing';
 import Compare from './Pages/Compare';
 import Time from './Pages/Time';
 import SignedOut from './Pages/SignedOut';
+import NavBar from './components/Navbar';
 
 
 function App() {
   return (
     <div className="App">
+    <NavBar />
     <Routes>
         <Route path='/' element= {<Landing />} />
         <Route path='/compare' element= {<Compare />} />
