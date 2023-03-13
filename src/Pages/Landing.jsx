@@ -34,7 +34,7 @@ const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         </div>{/* VerNavBar Closing Tag */}
 
 
-        <div className="main-content">
+        <div className="mainContent">
             <h2 className="leagueLeadersText">League Leaders</h2>
             <div className="leagueLeadersHolder">
                 {leagueLeaders.map((number) => {
