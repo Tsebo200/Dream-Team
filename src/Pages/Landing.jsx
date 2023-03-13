@@ -64,8 +64,12 @@ const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
             {/* Chart Section */}
             <div className="chartsContainer">
-                <div className="chartOneContainer"></div>
-                <div className="chartTwoContainer"></div>
+                <div className="chartOneContainer">
+                    <div className="chartOne"></div>
+                </div>
+                <div className="chartTwoContainer">
+                    <div className="chartTwo"></div>
+                </div>
             </div>
 
             {/* Footer */}
