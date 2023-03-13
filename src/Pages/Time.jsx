@@ -5,9 +5,6 @@ const Time = () => {
     return(
         <div>
             <h1>Timeline Page</h1>
-            <Link to="/">Dashboard</Link>
-            <Link to="/compare">Comparison</Link>
-            <Link to="/time">Timeline</Link>
         </div>
     )
 }
