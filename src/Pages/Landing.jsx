@@ -74,15 +74,17 @@ const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                 </div>
             </div>
 
-            {/* Footer */}
-            <div className="footer"></div>
 
                         
 
 
-
         {/* Main Content Div */}
         </div>
+        
+         {/* Footer */}
+         <div className="footer">
+                <p className="footerDetails">© Dream Team 2023 Developed by Tsebo Ramonyalioa</p>
+            </div>
 
 
         {/* Main Container closing */}
