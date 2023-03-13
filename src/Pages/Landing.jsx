@@ -25,11 +25,13 @@ const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
             <div className="navSpacerOne"></div>
             <br></br>
             <Link to="/"><h2><ion-icon name="basketball-outline"></ion-icon>Dashboard</h2></Link>
+            <div className="navSpacerTwo"></div>
             <br></br>
             <Link to="/compare"><h2> <ion-icon name="basketball-outline"></ion-icon>Comparison</h2></Link>
             <br></br>
-            <Link to="/time"><h2> <ion-icon name="basketball-outline"></ion-icon>Timeline</h2></Link>
             <div className="navSpacerTwo"></div>
+            <Link to="/time"><h2> <ion-icon name="basketball-outline"></ion-icon>Timeline</h2></Link>
+            <div className="navSpacerThree"></div>
             <Link to="/signedout"><h2 className="signOutText"><ion-icon  name="log-out-outline"></ion-icon>Sign Out</h2></Link>
         </div>{/* VerNavBar Closing Tag */}
 
