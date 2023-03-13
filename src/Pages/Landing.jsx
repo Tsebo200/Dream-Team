@@ -35,18 +35,34 @@ const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
         <div className="main-content">
-            <h2>League Leaders</h2>
+            <h2 className="leagueLeadersText">League Leaders</h2>
             <div className="leagueLeadersHolder">
                 {leagueLeaders.map((number) => {
                     return (
                     <>
-                    <div className="cardContainer"></div>
+                    <div className="cardContainer">
+                        <div className="cardNumber"></div>
+                        <div className="playerIcon"></div>
+                        <p>KD</p>
+                        <p>29.4</p>
+                    </div>
                     <div className="cardSpacer"></div>
                     </>
                     );
                 })}
+
             </div>
-            </div>
+                {/* Introduction */}
+                <div className="introContainer">
+                <h2 className="introHeading">Introduction</h2>
+                <p className="introText">Lorem ipsum dolor sit amet consectetur. Fusce porttitor ut venenatis phasellus commodo sit <br></br> faucibus. In nulla enim faucibus aliquet quam pellentesque nunc neque. Urna morbi sed lectus 
+                malesuada ac facilisis. 
+                Risus purus sed vestibulum hendrerit duis malesuada scelerisque id fermentum.</p>
+                </div>
+
+                
+
+        </div>
 
 
         {/* Main Container closing */}
