@@ -53,13 +53,27 @@ const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                 </div>
             </div>
 
-                {/* Introduction */}
-                <div className="introContainer">
+            {/* Introduction */}
+            <div className="introContainer">
                 <h2 className="introHeading">Introduction</h2>
                 <p className="introText">Lorem ipsum dolor sit amet consectetur. Fusce porttitor ut venenatis phasellus commodo sit <br></br> faucibus. In nulla enim faucibus aliquet quam pellentesque nunc neque. Urna morbi sed lectus 
                 malesuada ac facilisis. 
                 Risus purus sed vestibulum hendrerit duis malesuada scelerisque id fermentum.</p>
-                </div>
+            </div>
+            
+
+            {/* Chart Section */}
+            <div className="chartsContainer">
+                <div className="chartOneContainer"></div>
+                <div className="chartTwoContainer"></div>
+            </div>
+
+            {/* Footer */}
+            <div className="footer"></div>
+
+                        
+
+
 
         {/* Main Content Div */}
         </div>
