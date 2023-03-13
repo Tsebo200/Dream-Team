@@ -8,8 +8,8 @@ import '../Sass/styles.sass';
 
 const Landing = () => {
 
-// const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const leagueLeaders = [1, 2, 3, 4, 5, 6]
+const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const leagueLeaders = [1,2,3]
 
     return(
         <div className="mainContainer">
@@ -41,6 +41,7 @@ const leagueLeaders = [1, 2, 3, 4, 5, 6]
                     return (
                     <>
                     <div className="cardContainer"></div>
+                    <div className="cardSpacer"></div>
                     </>
                     );
                 })}
