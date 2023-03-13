@@ -1,20 +1,12 @@
 import React from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-// import NavBar from './components/Navbar';
-
-import '../Sass/styles.sass';
 
 
 const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // const leagueLeaders = [1,2,3]
 
-const Landing = () => {
-
+const LandingContent =() => {
     return(
-
-<div className="mainContent">
+        <div className="mainContent">
         <div className="leagueLeadersContainer">
         <h2 className="leagueLeadersText">League Leaders</h2>
             <div className="cardScrollContainer">
@@ -54,22 +46,6 @@ const Landing = () => {
       
     {/* Main Content Div Close */}
     </div> 
-    
-        // <div className="mainContainer">
-        // {/* <div className="header">
-        //     <div className="logo"></div>
-        //     <div className="spacingOne"></div>
-        //    <h1>Dream Team</h1>
-        //    <div className="userIcon"></div>
-        // </div> */}
-
-    
-
-        // {/* Main Container closing */}
-        // </div>
-    );
-
+    )
 }
-export default Landing
-
-
+export default LandingContent
