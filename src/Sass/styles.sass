@@ -9,49 +9,54 @@ html
     @font-face 
         font-family:Basketball 
         src: url('/../src/Assets/Fonts/Basketball.otf')
+
+    ion-icon
+        font-size: 30px
     
 
-// Section 1
+
 .mainContainer
     width: 100vw
     height: 100vh
     
+// Section 1
+.header
+    width: 100vw
+    height: 15vh
+    // background: #818181
+    background: 464646
+    // background: red
+    display: inline-flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: flex-start
+    align-content: center
+    align-items: center
 
-    .header
-        width: 100vw
-        height: 15%
-        // background: #818181
-        background: 464646
-        display: inline-flex
-        flex-direction: row
-        flex-wrap: nowrap
-        justify-content: flex-start
-        align-content: center
-        align-items: center
+    .logo
+        width: 90px
+        height: 90px
+        border-radius: 100%
+        background: #464646
+        margin-left: 7%
+        flex: 0 1 auto
 
-        .logo
-            width: 90px
-            height: 90px
-            border-radius: 100%
-            background: #464646
-            margin-left: 7%
-            flex: 0 1 auto
+    .spacingOne
+        width: 5%
 
-        .spacingOne
-            width: 5%
-
-        .userIcon
-            width: 70px
-            height: 70px
-            background: #464646
-            border-radius: 100%
-            margin-left: 60%
+    .userIcon
+        width: 70px
+        height: 70px
+        background: #464646
+        border-radius: 100%
+        margin-left: 60%
            
 // Section 2
 .vertNavBar
     width: 20%
-    height: 85%
+    height: 85vh
     background: 464646
+    background: green
     float: left
 
     .navSpacerOne
@@ -81,53 +86,58 @@ html
 
 
 
-ion-icon
-    font-size: 30px
 
-.leagueLeadersText
-    float: left
-    color: white
-
+// Section 3
 .mainContent
     width: 80%
-    height: 85%
-    // background: #818181
-    background: 464646
+    height: 85vh
+    background: #818181
+    // background: 464646
     float: left
 
-    .leagueLeadersHolder
+    .leagueLeadersContainer
         width: 100%
-        height: 17%
-        // overflow-x: scroll
-        // transform: rotate(-90deg)
-        // transform-origin: right top
-        // overflow-y: hidden
-        // overflow-x: scroll
-        overflow: auto
-        white-space:nowrap
-        // background: #D9D9D9
-        background: 464646
-        float: left
+        height: 24vh
+        background: blue
+        
+        .leagueLeadersText
+            color: white
+            float: left
 
-    .cardContainer
-        width: 17%
-        height: 100%
-        display: inline-block
-        border-radius: 27px
-        background: #F3F3F3
-        float: left
+        .cardScrollContainer
+            width: 100%
+            height: 15vh
+            // overflow-x: scroll
+            // transform: rotate(-90deg)
+            // transform-origin: right top
+            // overflow-y: hidden
+            // overflow-x: scroll
+            overflow: auto
+            white-space:nowrap
+            // background: #D9D9D9
+            background: 464646
+            float: left
 
-    .cardSpacer
-        width: 35px
-        height: 100%
-        // background: red
-        float: left
+        .cardContainer
+            width: 17%
+            height: 100%
+            display: inline-block
+            border-radius: 27px
+            background: #F3F3F3
+            float: left
+
+        .cardSpacer
+            width: 35px
+            height: 100%
+            background: red
+            float: left
 
 .introContainer
     width: 100%
-    height: 30%
+    height: 20vh
     padding-top: 10px
     // background: #818181
+    background: red
     float: left
 
     .introHeading
