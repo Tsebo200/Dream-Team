@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../Sass/graphs.sass';
+import '../Sass/compare.sass';
+import ButtonDarkExample from "../components/Dropdown";
 // Tree Shaking import 
 import { Chart, Pie, Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, ArcElement, Tooltip, Legend, CategoryScale, BarElement } from 'chart.js';
@@ -96,12 +98,13 @@ const Compare = ()=>{
     return(
         <div>
             {/* <h1>Comparison Page</h1> */}
-            <h2>How To Use</h2>
+            <h2 className="compareHeading">How To Use</h2>
             <div className="barBox">
             <Bar options={options} data={data} />
             </div>
             <div className="pieBox">
             <Pie data={data2} />
+            <ButtonDarkExample/>
             </div>
             {/* <Link to="/">Dashboard</Link>
             <Link to="/compare">Comparison</Link>

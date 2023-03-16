@@ -17,7 +17,7 @@ import NavBar from './components/Navbar';
 import Header from './components/Header';
 // import LandingContent from './components/LandingContent';
 import Footer from './components/Footer';
-
+import ButtonDarkExample from './components/Dropdown';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
     <NavBar />
     <Routes>
         <Route path='/' element= {<> <Landing /> </>} />
-        <Route path='/compare' element= {<Compare />} />
+        <Route path='/compare' element= {<><Compare /></>} />
         <Route path='/time' element= {<Time />} />
         <Route path='/signedout' element= {<SignedOut />} />
 
