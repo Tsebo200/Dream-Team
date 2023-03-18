@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../Sass/graphs.sass';
 import '../Sass/compare.sass';
+import '../Sass/styles.sass';
 import ButtonDarkExample from "../components/Dropdown";
 // Tree Shaking import 
 import { Chart, Pie, Bar } from 'react-chartjs-2';
@@ -96,16 +97,29 @@ const data2 = {
 const Compare = ()=>{
 
     return(
-        <div>
+        <div className="mainContent">
+          
+
             {/* <h1>Comparison Page</h1> */}
             <h2 className="compareHeading">How To Use</h2>
-            <div className="barBox">
+            <div className="explainBlock">
+            <p className="explanation">You may be wondering how to use this website well
+              all you need to tap on the drop down to select a player,
+              please keep note that the maximum players you may select at once is 3.
+            </p>
+            </div>
+            <div className="graphContainer">
+            <div className="dropdownContainer"></div>
+            </div>
+            {/* <div className="barBox">
             <Bar options={options} data={data} />
             </div>
             <div className="pieBox">
             <Pie data={data2} />
             <ButtonDarkExample/>
-            </div>
+            </div> */}
+
+
             {/* <Link to="/">Dashboard</Link>
             <Link to="/compare">Comparison</Link>
             <Link to="/time">Timeline</Link> */}

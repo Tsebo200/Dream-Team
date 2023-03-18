@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Time = () => {
     return(
-        <div>
+        <div className="mainContent"> 
             <h1>Timeline Page</h1>
         </div>
     )

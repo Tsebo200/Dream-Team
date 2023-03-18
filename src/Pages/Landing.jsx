@@ -12,7 +12,6 @@ const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const Landing = () => {
 
     return(
-
 <div className="mainContent">
         <div className="leagueLeadersContainer">
         <h2 className="leagueLeadersText">League Leaders</h2>
