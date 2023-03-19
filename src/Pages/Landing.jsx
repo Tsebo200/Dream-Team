@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // import NavBar from './components/Navbar';
 import '../Sass/styles.sass';
 
-
+// const [] = useState
 const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // const leagueLeaders = [1,2,3]
 
@@ -17,6 +17,7 @@ const Landing = () => {
         <h2 className="leagueLeadersText">League Leaders</h2>
             <div className="cardScrollContainer">
                 {leagueLeaders.map((number) => {
+                    
                     return (
                     <>
                     <div className="cardContainer">
@@ -34,7 +35,9 @@ const Landing = () => {
         {/* Introduction */}
         <div className="introContainer">
             <h2 className="introHeading">Introduction</h2>
-            <center><p className="introText">Welcome fellow NBA viewer or 2k Gamer I present to you lovely ballers,</p> <h4>Dream Team.</h4></center><br></br>
+            
+            <center><p className="introText">Welcome fellow NBA viewer or 2k Gamer I present to you lovely ballers,</p></center><br></br>
+            <div className="text-block"></div>
             <p className="introText"> Dream Team is an API driven React website that is based on an NBA API called BallDontLie, Dream Team has made NBA data consumption as easy as possible,
             as it delivers the data with Chart.js which makes the site interactive for the visitor.
             
