@@ -17,7 +17,6 @@ const Landing = () => {
         <h2 className="leagueLeadersText">League Leaders</h2>
             <div className="cardScrollContainer">
                 {leagueLeaders.map((number) => {
-                    
                     return (
                     <>
                     <div className="cardContainer">
