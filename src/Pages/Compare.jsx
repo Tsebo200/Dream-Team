@@ -69,23 +69,39 @@ const data2 = {
 const Compare = ()=>{
 
   const [ballerName, setBallerName] = useState([])
+  const [ballerData, setBallerData] = useState([])
 
-  useEffect(() => {
+  // useEffect(() => {
 
-
-
-    axios.get('https://www.balldontlie.io/api/v1/players')
-    .then((res) => {
-     setBallerName(res.data.data[4].first_name)
-    //  console.log({ballerName})
-     console.log(ballerName)
-    })
-     .catch((err) =>{
-       console.log(err)
-    })
+  //   axios.get('https://www.balldontlie.io/api/v1/players')
+  //   .then((res) => {
+  //    setBallerName(res.data.data[4].first_name)
+  //   //  console.log({ballerName})
+  //    console.log(ballerName)
+  //   })
+  //    .catch((err) =>{
+  //      console.log(err)
+  //   })
    
-   }, [])
+  //  }, [])
+ 
 
+   useEffect(() => {
+
+   axios.get('https://www.balldontlie.io/api/v1/stats')
+   .then((res) => {
+    setBallerData(res.data.data[10].ast)
+    // let playerStats = 
+    // setBallerData(res.data)
+    // playerStats(res.data)
+   //  console.log({ballerName})
+    console.log(ballerData)
+   })
+    .catch((err) =>{
+      console.log(err)
+   })
+  
+  },[ballerData])
 
 
 
@@ -104,19 +120,19 @@ const Compare = ()=>{
     },
   };
   
-  const labels = [ballerName, 'February', 'March', 'April', 'May', 'June', 'July'];
+  const labels = ['Jan', 'February', 'March', 'April', 'May', 'June', 'July'];
   
   const data = {
     labels,
     datasets: [
       {
         label: 'Dataset 1',
-        data:  [],
+        data: [],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
       {
         label: 'Dataset 2',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [ballerData, 59, 80, 81, 56, 55, 40],
         backgroundColor: 'rgba(53, 162, 235, 0.5)',
       },
     ],
