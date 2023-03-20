@@ -36,18 +36,18 @@ const Landing = () => {
             
            
             <div className="textBlockOne">
-            <h4 className="introHeading">Welcome fellow NBA viewer or 2k Gamer I present to you lovely ballers,</h4>  <h2 className="dream-team-text">Dream Team</h2>
+            <p className="introHeading">Welcome fellow NBA viewer or 2k Gamer I present to you lovely ballers,</p>  <h2 className="dream-team-text">Dream Team</h2>
             <br></br>
             </div>
             <div className="textBlockTwo">
             <p className="introText"> Dream Team is an API driven React website that is based on an NBA API called BallDontLie,
             It has made NBA data consumption as easy as possible as it delivers the data with data visualiser called Chart.js which makes the data more interesting 
             as it has different chart types such as chart types: bar, line, area, pie, bubble, radar, polar, and scatter but Dream Team optimises on the line and bar graphs.<br></br>
-            Dream Team has an interactive feature where the visitor can tap on the dropdown to select a specific NBA player.<br></br>
+            <br></br>
+            Dream Team has an interactive feature where the visitor can tap on the dropdown to select specific NBA players in order to compare their stats and the stats will be displayed on a bar graph, FYI this feature will be found in the comparison page.<br></br>
             
-            Dream Team is where we deliver NBA Data as easy and consumable as possible for you to process with the aid of Chart.js. 
-            
-            Well let me explain how this all works out<br></br> 
+            Well let me further explain on how this all works out, BallDontLie's data is being called with an get axios HTTP request which is also wrapped in a useEffect in order to constantly make calls without the webpage reloading, 
+            once the data is called it is stored in react hook called a useState then the stats is returned within a chart called Chart.js v4.<br></br> 
             
             We hope you find the viewing experience of the NBA statistics fantastic and entertaining</p>
             </div>
