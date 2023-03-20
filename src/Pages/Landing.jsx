@@ -25,7 +25,6 @@ const Landing = () => {
                         <p>KD</p>
                         <p>29.4</p>
                     </div>
-                    <div className="cardSpacer"></div>
                     </>
                     ); })}
             </div>
