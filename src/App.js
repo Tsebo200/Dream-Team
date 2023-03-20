@@ -12,7 +12,7 @@ import Compare from './Pages/Compare';
 import Time from './Pages/Time';
 import SignedOut from './Pages/SignedOut';
 
-
+// import { ApiCall } from './API/ApiCall';
 import NavBar from './components/Navbar';
 import Header from './components/Header';
 // import LandingContent from './components/LandingContent';

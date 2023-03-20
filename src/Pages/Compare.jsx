@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import '../Sass/graphs.sass';
 import '../Sass/compare.sass';
 import '../Sass/styles.sass';
@@ -10,6 +12,9 @@ import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScal
 ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 {/* <Chart type='line' data={chartData} /> */}
+
+
+
 
 
 
@@ -92,9 +97,28 @@ const data2 = {
 
   
 
-
-
 const Compare = ()=>{
+
+  const [ballerName, setBallerName] = useState([])
+
+  useEffect(() => {
+
+
+
+    axios.get('https://www.balldontlie.io/api/v1/players')
+    .then((res) => {
+    //  setBallerName(res.data.data[4].first_name)
+    //  console.log({ballerName})
+     console.log(res.data.data)
+    })
+     .catch((err) =>{
+       console.log(err)
+    })
+   
+   }, [])
+
+
+
 
     return(
         <div className="mainContent">
@@ -109,15 +133,18 @@ const Compare = ()=>{
             </p>
             </div>
             <div className="graphContainer">
-            <div className="dropdownContainer"></div>
-            </div>
-            {/* <div className="barBox">
+
+            <div className="barBox">
             <Bar options={options} data={data} />
             </div>
             <div className="pieBox">
             <Pie data={data2} />
             <ButtonDarkExample/>
-            </div> */}
+            </div>
+            
+            <div className="dropdownContainer"></div>
+            </div>
+            
 
 
             {/* <Link to="/">Dashboard</Link>
