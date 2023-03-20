@@ -36,7 +36,7 @@ const Landing = () => {
             
            
             <div className="textBlockOne">
-            <p className="introHeading">Welcome fellow NBA viewer or 2k Gamer I present to you lovely ballers,</p>  <h2 className="dream-team-text">Dream Team</h2>
+            <p className="introHeading">Welcome fellow NBA viewer or 2k Gamer I present to you lovely ballers</p>  <h2 className="dream-team-text">Dream Team</h2>
             <br></br>
             </div>
             <div className="textBlockTwo">
@@ -47,7 +47,7 @@ const Landing = () => {
             Dream Team has an interactive feature where the visitor can tap on the dropdown to select specific NBA players in order to compare their stats and the stats will be displayed on a bar graph, FYI this feature will be found in the comparison page.<br></br>
             
             Well let me further explain on how this all works out, BallDontLie's data is being called with an get axios HTTP request which is also wrapped in a useEffect in order to constantly make calls without the webpage reloading, 
-            once the data is called it is stored in react hook called a useState then the stats is returned within a chart called Chart.js v4.<br></br> 
+            once the data is called it is stored in react hook called a useState then the stats is displayed within a chart called Chart.js v4 with the first useState variable.<br></br> 
             
             We hope you find the viewing experience of the NBA statistics fantastic and entertaining</p>
             </div>
