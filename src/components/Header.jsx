@@ -9,7 +9,7 @@ return(
     <div className="header">
     <div className="logo"></div>
     <div className="spacingOne"></div>
-    <h1>Dream Team</h1>
+    <h1 className="dreamTeamHeading">Dream Team</h1>
     <div className="userIcon"></div>
     </div>
 

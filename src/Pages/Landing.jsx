@@ -32,18 +32,25 @@ const Landing = () => {
 
         {/* Introduction */}
         <div className="introContainer">
-            <h2 className="introHeading">Introduction</h2>
+            <h2 className="introductionText">Introduction</h2>
             
-            <center><p className="introText">Welcome fellow NBA viewer or 2k Gamer I present to you lovely ballers,</p></center><br></br>
-            <div className="text-block"></div>
-            <p className="introText"> Dream Team is an API driven React website that is based on an NBA API called BallDontLie, Dream Team has made NBA data consumption as easy as possible,
-            as it delivers the data with Chart.js which makes the site interactive for the visitor.
+           
+            <div className="textBlockOne">
+            <h4 className="introHeading">Welcome fellow NBA viewer or 2k Gamer I present to you lovely ballers,</h4>  <h2 className="dream-team-text">Dream Team</h2>
+            <br></br>
+            </div>
+            <div className="textBlockTwo">
+            <p className="introText"> Dream Team is an API driven React website that is based on an NBA API called BallDontLie,
+            It has made NBA data consumption as easy as possible as it delivers the data with data visualiser called Chart.js which makes the data more interesting 
+            as it has different chart types such as chart types: bar, line, area, pie, bubble, radar, polar, and scatter but Dream Team optimises on the line and bar graphs.<br></br>
+            Dream Team has an interactive feature where the visitor can tap on the dropdown to select a specific NBA player.<br></br>
             
             Dream Team is where we deliver NBA Data as easy and consumable as possible for you to process with the aid of Chart.js. 
             
             Well let me explain how this all works out<br></br> 
             
             We hope you find the viewing experience of the NBA statistics fantastic and entertaining</p>
+            </div>
         </div>
         
 
