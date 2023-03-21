@@ -69,7 +69,9 @@ const data2 = {
 const Compare = ()=>{
 
   const [ballerName, setBallerName] = useState([])
-  const [ballerData, setBallerData] = useState([])
+  const [ballerData, setBallerData] = useState('')
+
+
 
   // useEffect(() => {
 
@@ -90,11 +92,29 @@ const Compare = ()=>{
 
    axios.get('https://www.balldontlie.io/api/v1/stats')
    .then((res) => {
-    setBallerData(res.data.data[10].ast)
+      let data = res.data.data
+    // setBallerData(res.data.data[10].ast)
+    // setBallerData(res.data.data[24].ast)
+
+
+    const fieldGoalsAttempted = []
+
+    for (let i = 0; i < data.length; i++) {
+      fieldGoalsAttempted.push({ data: data[i].fga })
+    }
+    console.log(fieldGoalsAttempted)
+
+    
+
+    // setBallerData(res.data.data[0].fga)
+    
+    
     // let playerStats = 
     // setBallerData(res.data)
     // playerStats(res.data)
    //  console.log({ballerName})
+    // ballerData.map((data) => res.data.data),
+
     console.log(ballerData)
    })
     .catch((err) =>{
@@ -127,7 +147,7 @@ const Compare = ()=>{
     datasets: [
       {
         label: 'Dataset 1',
-        data: [],
+        data: ballerData,
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
       {
