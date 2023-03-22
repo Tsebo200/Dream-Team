@@ -8,6 +8,7 @@ import '../Sass/styles.sass';
 // const [] = useState
 const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // const leagueLeaders = [1,2,3]
+const cardNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const Landing = () => {
 
@@ -17,10 +18,19 @@ const Landing = () => {
         <h2 className="leagueLeadersText">League Leaders</h2>
             <div className="cardScrollContainer">
                 {leagueLeaders.map((number) => {
+
                     return (
                     <>
                     <div className="cardContainer">
-                        <div className="cardNumber"></div>
+                        {cardNumber.map((number) => {
+                            return(
+                            <>
+                            <div className="cardNumber">
+                                <p>1</p>
+                            </div> 
+                            </>
+                            ); })}
+                            
                         <div className="playerIcon"></div>
                         <p>KD</p>
                         <p>29.4</p>
