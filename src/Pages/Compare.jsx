@@ -92,7 +92,9 @@ const Compare = ()=>{
 
    axios.get('https://www.balldontlie.io/api/v1/stats')
    .then((res) => {
-      let data = res.data.data
+      let data = res.data.data 
+
+
     // setBallerData(res.data.data[10].ast)
     // setBallerData(res.data.data[24].ast)
 

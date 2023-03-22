@@ -18,6 +18,7 @@ import Header from './components/Header';
 // import LandingContent from './components/LandingContent';
 import Footer from './components/Footer';
 import ButtonDarkExample from './components/Dropdown';
+import LeagueLeadersData from './API/leagueLeadersData';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/compare' element= {<><Compare /></>} />
         <Route path='/time' element= {<Time />} />
         <Route path='/signedout' element= {<SignedOut />} />
+        <Route path='/data' element = {<LeagueLeadersData/>}/>
 
 
         {/* Just Practicing to display graphs */}
