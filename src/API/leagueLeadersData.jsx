@@ -11,12 +11,15 @@ const LeagueLeadersData = () => {
 
     useEffect(()=> {
 
- 
+    let allPlayers = []
+    
 
     // KD Points - 1
     axios.get('https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=140')
     .then((res) => {
     let data = res.data.data[0]
+
+    allPlayers.push(data)
     console.log(data)
     })
     .catch((err)=>{
@@ -27,6 +30,7 @@ const LeagueLeadersData = () => {
     axios.get('https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=15')
     .then((res) => {
     let data = res.data.data[0]
+        allPlayers.push(data)
     console.log(data)
     })
     .catch((err)=>{
@@ -123,7 +127,8 @@ const LeagueLeadersData = () => {
     console.log(err)
     })
 
-},[0])
+},[])
+
 
     return(
 <>
