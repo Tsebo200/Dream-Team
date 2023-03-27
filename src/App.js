@@ -23,6 +23,8 @@ import ButtonDarkExample from './components/Dropdown';
 import LeagueLeadersData from './API/leagueLeadersData';
 // Charts
 import PolarAreaChart from './components/Charts/PolarAreaChart';
+import BarChart from './components/Charts/BarChart';
+import PieChart from './components/Charts/PieChart';
 
 
 function App() {
@@ -39,6 +41,9 @@ function App() {
 
         {/* Charts */}
         <Route path='/polar' element = {<PolarAreaChart/>}/>
+        <Route path='/bar' element = {<BarChart/>}/>
+        <Route path='/pie' element = {<PieChart/>}/>
+
 
 
         {/* Just Practicing to display graphs */}
