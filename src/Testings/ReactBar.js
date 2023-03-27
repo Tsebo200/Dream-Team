@@ -5,8 +5,6 @@ import { Bar } from 'react-chartjs-2';
 
 const BarChart = () => {
 
-
-
 ChartJS.register(
   CategoryScale,
   LinearScale,

@@ -6,12 +6,14 @@ import { Route, Routes } from 'react-router-dom';
 // import BarChart from './Testings/ReactBar';
 // import Compare from './components/Comparison';
 
-
+// Pages
 import Landing from './Pages/Landing';
 import Compare from './Pages/Compare';
 import Time from './Pages/Time';
 import SignedOut from './Pages/SignedOut';
 
+
+// Components
 // import { ApiCall } from './API/ApiCall';
 import NavBar from './components/Navbar';
 import Header from './components/Header';
@@ -19,6 +21,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ButtonDarkExample from './components/Dropdown';
 import LeagueLeadersData from './API/leagueLeadersData';
+// Charts
+import PolarAreaChart from './components/Charts/PolarAreaChart';
+
 
 function App() {
   return (
@@ -26,11 +31,14 @@ function App() {
     <Header />
     <NavBar />
     <Routes>
-        <Route path='/' element= {<> <Landing /> </>} />
+        <Route path='/' element= {<Landing />} />
         <Route path='/compare' element= {<><Compare /></>} />
         <Route path='/time' element= {<Time />} />
         <Route path='/signedout' element= {<SignedOut />} />
         <Route path='/data' element = {<LeagueLeadersData/>}/>
+
+        {/* Charts */}
+        <Route path='/polar' element = {<PolarAreaChart/>}/>
 
 
         {/* Just Practicing to display graphs */}

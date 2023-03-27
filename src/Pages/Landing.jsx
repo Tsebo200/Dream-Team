@@ -13,7 +13,7 @@ import '../Sass/styles.sass';
 const Landing = () => {
 
     // const [allPlayers, setAllPlayers] = useState([])
-    const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    const leagueLeaders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
     const [allPlayersData, setAllPlayersData] = useState([])
 
 // create a for loop that runs all ids
@@ -137,7 +137,7 @@ const Landing = () => {
     
     
     // Paul George - 10
-        axios.get('https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=' + apiData[i])
+        axios.get('https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=132')
         .then((res) => {
         let data = res.data.data[0]
          allPlayers.push(data)

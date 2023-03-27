@@ -6,6 +6,7 @@ import '../Sass/graphs.sass';
 import '../Sass/compare.sass';
 import '../Sass/styles.sass';
 import ButtonDarkExample from "../components/Dropdown";
+import PolarAreaChart from "../components/Charts/PolarAreaChart";
 // Tree Shaking import 
 import { Chart, Pie, Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, ArcElement, Tooltip, Legend, CategoryScale, BarElement } from 'chart.js';
@@ -185,6 +186,7 @@ const Compare = ()=>{
             </div>
             
             <div className="dropdownContainer"></div>
+            <PolarAreaChart data={data} />;
             </div>
             
 
