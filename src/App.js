@@ -14,7 +14,7 @@ import SignedOut from './Pages/SignedOut';
 
 
 // Components
-// import { ApiCall } from './API/ApiCall';
+import { ApiCall } from './API/ApiCall';
 import NavBar from './components/Navbar';
 import Header from './components/Header';
 // import LandingContent from './components/LandingContent';
@@ -25,6 +25,7 @@ import LeagueLeadersData from './API/leagueLeadersData';
 import PolarAreaChart from './components/Charts/PolarAreaChart';
 import BarChart from './components/Charts/BarChart';
 import PieChart from './components/Charts/PieChart';
+import OneAxiosForLoop from './Testings/OneAxiosForLoop';
 
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
         <Route path='/polar' element = {<PolarAreaChart/>}/>
         <Route path='/bar' element = {<BarChart/>}/>
         <Route path='/pie' element = {<PieChart/>}/>
+        <Route path='/playground' element = {<OneAxiosForLoop/>} />
+        <Route path='/api' element={<ApiCall/>}/>
 
 
 
