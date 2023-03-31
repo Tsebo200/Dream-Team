@@ -24,7 +24,7 @@ useEffect(()=>{
 
 return(
     <>
-    <Button variant="outline-dark">Dark</Button>
+  
     </>
 )
 }
