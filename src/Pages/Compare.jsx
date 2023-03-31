@@ -16,9 +16,6 @@ import PieChart from "../components/Charts/PieChart";
   
 
 const Compare = ()=>{
-
-
-
     return(
         <div className="mainContent">
           
@@ -27,22 +24,29 @@ const Compare = ()=>{
             <h2 className="compareHeading">How To Use</h2>
             <div className="explainBlock">
             <p className="explanation">You may be wondering how to use this website well
-              all you need to tap on the drop down to select a player,
+              all you need is to tap on the dropdown to select a player,
               please keep note that the maximum players you may select at once is 3.
             </p>
             </div>
             <div className="graphContainer">
 
-            <div className="barBox">
-            <BarChart/>
-            </div>
-            <div className="pieBox">
+            <center><div className="barBox">
+            <BarChart/></div></center>
+
+           
+
+            {/* <div className="pieBox">
             <PieChart/>
             <ButtonDarkExample/>
             </div>
+
+            <div className="radarBox">
+            <PolarAreaChart />
+            </div> */}
             
             <div className="dropdownContainer"></div>
-            <PolarAreaChart />;
+
+           
             </div>
             
 

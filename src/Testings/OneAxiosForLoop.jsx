@@ -18,7 +18,7 @@ axios.get('https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=')
  .map(playerId)
 
   useEffect(()=>{
-  axios.get('https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=20'+ playerId[0])
+  axios.get('https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]='+ playerId[0])
   .then((res)=> {
   const data = res.data.data
   
