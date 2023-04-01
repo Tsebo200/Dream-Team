@@ -130,8 +130,8 @@ function BarChart() {
 
 
 
-  // const labels = ['Kevin Durant', 'Giannis', 'Steph Curry', 'March', 'April', 'May', 'June', 'July'];
-    const labels = ['playerOne', 'playerTwo', 'Steph Curry', 'March', 'April', 'May', 'June', 'July'];
+  const labels = ['Durant', 'Giannis', 'Jokic', 'Young', 'Curry', 'Lavine', 'Tatum', 'DeRozan', 'Luka', 'George'];
+    // const labels = ['playerOne', 'playerTwo', 'Steph Curry', 'March', 'April', 'May', 'June', 'July'];
   
   const data = {
     labels,
