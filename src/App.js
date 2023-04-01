@@ -25,7 +25,9 @@ import LeagueLeadersData from './API/leagueLeadersData';
 import PolarAreaChart from './components/Charts/PolarAreaChart';
 import BarChart from './components/Charts/BarChart';
 import PieChart from './components/Charts/PieChart';
+// Practice
 import OneAxiosForLoop from './Testings/OneAxiosForLoop';
+import OneAxiosPartTwo from './Testings/OneAxiosPartTwo';
 
 
 function App() {
@@ -45,6 +47,7 @@ function App() {
         <Route path='/bar' element = {<BarChart/>}/>
         <Route path='/pie' element = {<PieChart/>}/>
         <Route path='/playground' element = {<OneAxiosForLoop/>} />
+        <Route path='/sandbox' element={<OneAxiosPartTwo/>}/>
         <Route path='/api' element={<ApiCall/>}/>
 
 

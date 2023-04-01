@@ -85,7 +85,7 @@ function BarChart() {
       },
       title: {
         display: true,
-        text: 'Chart.js Bar Chart',
+        text: 'compare 3 playas',
       },
     },
   };
