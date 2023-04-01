@@ -9,6 +9,9 @@ ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 
 function BarChart() {
+  var playerId = 15
+  const url = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]="+playerId;
+
   const KD = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=140";
   const Giannis = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=15";
   const Jokic = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=246';
@@ -22,7 +25,7 @@ function BarChart() {
   
     var leaguePlayer = [KD, Giannis, Jokic, Young, Curry, Lavine, Tatum, DeRozan, Luka, George];
 
-    const [kevinData, setKevinData] = useState('');
+    const [kevinData, setKevinData] = useState();
     const [giannisData, setGiannisData] = useState('');
     const [jokicData, setJokicData] = useState('');
     const [youngData, setYoungData] = useState('');
@@ -38,15 +41,45 @@ function BarChart() {
       useEffect(()=>{
         axios.get(leaguePlayer[0])
         .then((res)=>{
-          let data = res.data.data
-          let kevinBestPoints = res.data.data[23].pts
+          // let data = res.data.data
+          // let kevinBestPoints = res.data.data[23].pts
+
+          let data = res.data.data;
+          let stats = [];
+
+          for (let x = 0; x < data.length; x++) {
+            stats.push(data[x].pts)
+            // Add anaxios 
+          }
+
+          for (let i = 0; i < 10; i++){
+            if(i = 0){
+              var id = 140
+            } else if(i = 1){
+              var id = 15
+            } else if(i = 2){
+              var id = 246
+            }
+            axios.get("https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]="+id)
+           let data2 =  res.data.data
+
+          }
+          console.log(stats);
+          setKevinData(stats)
+
+          // console.log(data);
+
+
+
+
           
           // let kevinDurant  = leaguePlayer[0].res.data[23].pts
 
-          console.log(data)
-          console.log(kevinBestPoints)
+          // console.log(data)
+          // console.log(kevinData)
+          // console.log(kevinBestPoints)
 
-          setKevinData(kevinBestPoints)
+          // setKevinData(kevinBestPoints)
           // console.log()
 
         })
@@ -65,8 +98,8 @@ function BarChart() {
           let data = res.data.data
           let GiannisBestPoints = res.data.data[23].pts
 
-          console.log(data)
-          console.log(GiannisBestPoints)
+          // console.log(data)
+          // console.log(GiannisBestPoints)
 
           setGiannisData(GiannisBestPoints)
           // console.log()
@@ -138,7 +171,7 @@ function BarChart() {
     datasets: [
       {
         label: 'Dataset 1',
-        data: {kevinData},
+        data: kevinData,
         // data: [{x: 10, y: {GiannisBestPoints}}, {x: 15, y: null}, {x: 20, y: 10}],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
