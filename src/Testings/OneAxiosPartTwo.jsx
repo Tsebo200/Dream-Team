@@ -12,9 +12,9 @@ function OneAxiosPartTwo() {
         var playerId = [];
 
 
-        for (let i = 0; data.length; i++){
-            playerId.push({id: data.id});
-        }
+        // for (let i = 0; data.length; i++){
+        //     playerId.push({id: data.id});
+        // }
 
 
         console.log(data)
