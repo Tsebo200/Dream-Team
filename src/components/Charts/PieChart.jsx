@@ -1,16 +1,33 @@
 import React from 'react'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend} from 'chart.js';
 import { Pie } from 'react-chartjs-2';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 function PieChart() {
 
-    ChartJS.register(ArcElement, Tooltip, Legend);
+  useEffect(()=>{
+    axios.get("https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=140")
+    .then((res)=>{
+      let data = res.data.data[23]
+      console.log(res)
+
+    })
+    .catch((err)=>{
+      console.log(err)
+    })
+  })
+
+
+   
 
     const data = {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [
           {
-            label: '# of Votes',
+            label: 'Kevin Durants Stats',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',

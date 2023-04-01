@@ -1,40 +1,105 @@
 import {Bar} from 'react-chartjs-2';
 import React from 'react';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import LeagueLeaders from '../../API/LeagueLeaders';
+import { useState, useEffect, useRef } from 'react';
 import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, ArcElement, Tooltip, Legend, CategoryScale, BarElement } from 'chart.js';
 ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 
+
 function BarChart() {
+  const KD = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=140";
+  const Giannis = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=15";
+  const Jokic = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=246';
+  const Young = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=490';
+  const Curry = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=115';
+  const Lavine = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=268';
+  const Tatum = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=434';
+  const DeRozan = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=125';
+  const Luka = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=132';
+  const George = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=172';
+  
+    var leaguePlayer = [KD, Giannis, Jokic, Young, Curry, Lavine, Tatum, DeRozan, Luka, George];
 
-    const [ballerData, setBallerData] = useState('')
+    const [kevinData, setKevinData] = useState('');
+    const [giannisData, setGiannisData] = useState('');
+    const [jokicData, setJokicData] = useState('');
+    const [youngData, setYoungData] = useState('');
+    const [curryData, setCurryData] = useState('');
+    const [lavineData, setLavineData] = useState('');
+    const [tatumData, setTatumData] = useState('');
+    const [deRozanData, setDeRozanData] = useState('');
+    const [lukaData, setLukaData] = useState('');
+    const [georgeData, setGeorgeData] = useState('');
 
-     
-     useEffect(() => {
-  
-     axios.get('https://www.balldontlie.io/api/v1/stats')
-     .then((res) => {
-        let data = res.data.data 
+    // leaguePlayer.map((leaguePlayer) => data.data[0].pts)
 
+      useEffect(()=>{
+        axios.get(leaguePlayer[0])
+        .then((res)=>{
+          let data = res.data.data
+          let kevinBestPoints = res.data.data[23].pts
+          
+          // let kevinDurant  = leaguePlayer[0].res.data[23].pts
+
+          console.log(data)
+          console.log(kevinBestPoints)
+
+          setKevinData(kevinBestPoints)
+          // console.log()
+
+        })
+        .catch((err)=>{
+          console.log(err)
+        })
+      })
+
+     const GiannisBestPoints = useRef()
+
+
+      // Giannis
+      useEffect(()=>{
+        axios.get(leaguePlayer[1])
+        .then((res)=>{
+          let data = res.data.data
+          let GiannisBestPoints = res.data.data[23].pts
+
+          console.log(data)
+          console.log(GiannisBestPoints)
+
+          setGiannisData(GiannisBestPoints)
+          // console.log()
+
+        })
+        .catch((err)=>{
+          console.log(err)
+        })
+      })
+
+
+
+        // // Steph
+        // useEffect(()=>{
+        //   axios.get(leaguePlayer[2])
+        //   .then((res)=>{
+        //     let data = res.data.data
+        //     let CurryBestPoints = res.data.data[23].pts
   
+        //     console.log(data)
+        //     console.log(CurryBestPoints)
   
-      const fieldGoalsAttempted = []
+        //     setCurryData(CurryBestPoints)
+        //     // console.log()
   
-      for (let i = 0; i < data.length; i++) {
-        fieldGoalsAttempted.push({ data: data[i].fga })
-      }
-      console.log(fieldGoalsAttempted)
+        //   })
+        //   .catch((err)=>{
+        //     console.log(err)
+        //   })
+        // })
   
-    
-  
-      console.log(ballerData)
-     })
-      .catch((err) =>{
-        console.log(err)
-     })
-    
-    },[ballerData])
+
+
   
   
   
@@ -62,20 +127,20 @@ function BarChart() {
     },
   };
   
-  const labels = ['Jan', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+
+
+  // const labels = ['Kevin Durant', 'Giannis', 'Steph Curry', 'March', 'April', 'May', 'June', 'July'];
+    const labels = ['playerOne', 'playerTwo', 'Steph Curry', 'March', 'April', 'May', 'June', 'July'];
   
   const data = {
     labels,
     datasets: [
       {
         label: 'Dataset 1',
-        data: ballerData,
+        data: {kevinData},
+        // data: [{x: 10, y: {GiannisBestPoints}}, {x: 15, y: null}, {x: 20, y: 10}],
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'Dataset 2',
-        data: [ballerData, 59, 80, 81, 56, 55, 40],
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
       },
     ],
   };

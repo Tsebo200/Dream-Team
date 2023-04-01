@@ -15,9 +15,10 @@ const DeRozan = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_id
 const Luka = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=132';
 const George = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=172';
 
+var leaguePlayer = [KD, Giannis, Jokic, Young, Curry, Lavine, Tatum, DeRozan, Luka, George];
 
   return (
-    
+
     <div>LeagueLeaders</div>
   )
 }
