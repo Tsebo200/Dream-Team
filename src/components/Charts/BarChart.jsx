@@ -9,8 +9,9 @@ ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 
 function BarChart() {
-  var playerId = 15
-  const url = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]="+playerId;
+  // var playerId = 15
+  let playerId = [140, 15, 246, 490, 115, 268, 434, 125, 132, 172];
+  const url = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=";
 
   const KD = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=140";
   const Giannis = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=15";
@@ -39,31 +40,34 @@ function BarChart() {
     // leaguePlayer.map((leaguePlayer) => data.data[0].pts)
 
       useEffect(()=>{
-        axios.get(leaguePlayer[0])
+        for (let i = 0; i < playerId.length; i++){
+        axios.get(url+playerId[i])
         .then((res)=>{
           // let data = res.data.data
           // let kevinBestPoints = res.data.data[23].pts
-
-          let data = res.data.data;
+          
+          let data = res.data;
+          console.log(data)
           let stats = [];
 
-          for (let x = 0; x < data.length; x++) {
-            stats.push(data[x].pts)
-            // Add anaxios 
+          for (let i = 0; i < data.length; i++) {
+            stats.push(data[i].pts)
+          //   // Add anaxios 
           }
+        
 
-          for (let i = 0; i < 10; i++){
-            if(i = 0){
-              var id = 140
-            } else if(i = 1){
-              var id = 15
-            } else if(i = 2){
-              var id = 246
-            }
-            axios.get("https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]="+id)
-           let data2 =  res.data.data
+          // for (let i = 0; i < 10; i++){
+          //   if(i = 0){
+          //     var id = 140
+          //   } else if(i = 1){
+          //     var id = 15
+          //   } else if(i = 2){
+          //     var id = 246
+          //   }
+          //   axios.get("https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]="+id)
+          //  let data2 =  res.data.data
 
-          }
+          // }
           console.log(stats);
           setKevinData(stats)
 
@@ -86,7 +90,9 @@ function BarChart() {
         .catch((err)=>{
           console.log(err)
         })
-      })
+      }
+      },[])
+    
 
      const GiannisBestPoints = useRef()
 
