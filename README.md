@@ -13,7 +13,7 @@
 <p align="center">
 
   <a href="https://github.com/Tsebo200/Dream-Team">
-    <!-- <img src="client/src/assets/OpenStackLogo-white.svg" width="200px"> -->
+    <img src="src/Assets/Images/Dream Team Logo.svg" width="200px">
   </a>
 
 <h3 align="center">Dream Team</h3>

@@ -17,6 +17,7 @@ import SignedOut from './Pages/SignedOut';
 import { ApiCall } from './API/ApiCall';
 import NavBar from './components/Navbar';
 import Header from './components/Header';
+import DropdownThree from './components/DropdownThree';
 // import LandingContent from './components/LandingContent';
 import Footer from './components/Footer';
 import ButtonDarkExample from './components/Dropdown';
@@ -50,7 +51,7 @@ function App() {
         <Route path='/playground' element = {<OneAxiosForLoop/>} />
         <Route path='/sandbox' element={<OneAxiosPartTwo/>}/>
         <Route path='/api' element={<ApiCall/>}/>
-        <Route path='/dropdown' element={<DropdownTwo/>}/>
+        <Route path='/dropdown' element={<DropdownThree/>}/>
 
 
         {/* Just Practicing to display graphs */}
