@@ -206,10 +206,9 @@ stipulate functionality and improvements that can be implemented in the future.
 ### Mockups
 
 <!-- TODO Change this -->
-
-<!-- ![image2][image2]
+![image1] [image1]
+![image2][image2]
 ![image3][image3]
-![image4][image4] -->
 <br>
 
 
@@ -260,11 +259,14 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- - [MockupWorld](https://www.mockupworld.co/) -->
 - [Flexy Boxes](https://the-echoplex.net/flexyboxes/)
 
+ [image1]: src/Assets/Images/Dashboard.png
+ [image2]: src/Assets/Images/Compare.png
+[image3]: src/Assets/Images/Timeline.png
 
- [image1]: client/readme-assets/about-project.png
-<!-- [image2]: client/readme-assets/register.jpg
-[image3]: client/readme-assets/verify.jpg
-[image4]: client/readme-assets/question.jpg
+ <!-- [image1]: client/readme-assets/about-project.png -->
+ <!-- [image2]: client/readme-assets/register.jpg -->
+<!-- [image3]: client/readme-assets/verify.jpg -->
+<!-- [image4]: client/readme-assets/question.jpg
 [image5]: client/readme-assets/answer.jpg
 [image6]: client/src/Assets/mockups/mockup6.jpg
 [image7]: client/src/Assets/mockups/mockup7.jpg
@@ -274,7 +276,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image11]: Images/mockup2.jpg
 [image12]: Images/mockup3.jpg
 [image13]: Images/mockup4.jpg
-[image14]: client/src/Assets/mockups/mockup8.jpg -->
+[image14]: client/src/Assets/mockups/mockup8.jpg  -->
 
 <!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/tsebo-ramonyalioa-2392381b4/
