@@ -5,6 +5,7 @@ import LeagueLeaders from '../../API/LeagueLeaders';
 import { useState, useEffect, useRef } from 'react';
 import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, ArcElement, Tooltip, Legend, CategoryScale, BarElement } from 'chart.js';
 ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
+// charts plugins
 
 
 
