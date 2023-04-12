@@ -66,7 +66,7 @@
 
 ### Project Description
 
-Welcome to Dream Team! This is an API generated webpage, it is similar to seeing a forex website/application which displays stats on the currencies, well with that in mind, Dream Team displays players statistics such as their Field Ground points  Except Currencies, something more interesting am I right?...Anyways this website benefits NBA and basketball wannabes to learn more basketball easier with the help of Chart.js to display the content in an interesting manner.
+Welcome to Dream Team! This is an API-generated webpage, it is similar to seeing a Forex website/application which displays stats on the currencies, well with that in mind, Dream Team displays players' statistics such as their Field Ground points. This website benefits NBA and basketball wannabes to learn more about basketball much easier with the help of Chart.js to display the content in an interesting manner.
 
 ### Built With
 <!-- [<img src="https://www.svgrepo.com/show/331488/mongodb.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=gs_emea_south_africa_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624560&adgroup=115749711783) -->
