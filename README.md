@@ -131,7 +131,7 @@ Here are a couple of ways to clone this repo:
 
 ## Concept Process
 
-I went with a simple and minimalistic UI design as I wanted a dark mode type of design, thus I utilised dark colours
+I went with a simple and minimalistic UI design as I wanted a dark mode type of design, thus I utilised dark colours. DreamTeam is a website that is there to help users understand the sport of basketball
 
 We really went with a simple and a minimalistic UI design. OpenStack is there to be functional and helpful to any newcomer or veteran of OpenStack. Where they can simply ask, answer and view questions in a quick, concise and effective way. We stick to a simple orange with accents of a baby blue palette, with a light-themed website. A UI trend that really started to rise among web apps, was rounded corners, so we also incorporated that into our design, just to round it off even further.
 
@@ -161,17 +161,25 @@ The `Development Process` is the technical implementations and functionality don
 
 #### Highlights
 
-<!-- stipulated the highlight you eOpenStackerienced with the project -->
+stipulated the highlight you experienced with the project
 
-<!-- - A very big high point was seeing the data from my backend being populated dynamically in my front-end.
-- It was also really amazing to see our site being hosted on Heroku, for the entire digital world to see and interact with
+- A very big high point was seeing the data from my backend being populated dynamically in my front-end.
 - Fixing all the annoying bugs will always be a plus point
 - Handing in the project on time
-- Working with deployment software like Heroku -->
+
 
 #### Challenges
 
-<!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
+stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved)
+
+- The largest issue I had was manipulating the API data and formatting it to fit with the chart.js datasets
+as each player had their own end point, thus I had to create create an array of the IDs I wanted and used a for loop it within the promise whilst adding the baseUrl in the axios request 
+
+- my layout was also an issue but in most places I utilised flex boxes for the main containers in order to fixate the contents within that position on any screen
+
+- Displaying data from my API was also my largest issue but I was able to dynamically display data from the API
+
+- overthinking somethings is my issue
 
 <!-- - Something we unfortunately could not implement because of time restrictions was Amazon's S3 Bucket's, in the end we had to drop it revert back to Multer for image uploading
 - A big challenge was the tag handling in the question's portal, with the help of the team, we were able to get it working
@@ -181,7 +189,11 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- TODO Change this! -->
 
-<!-- stipulate functionality and improvements that can be implemented in the future. -->
+stipulate functionality and improvements that can be implemented in the future.
+
+- I will ensure to populate data into the UI Card, Polaradarchart and PieChart
+
+- My Front-end needs some work as well
 
 <!-- - We would like to make this a fully responsive website
 - We would like to implement dark mode
