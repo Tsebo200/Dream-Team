@@ -15,7 +15,9 @@ function LineChart() {
     Legend
   );
 
-  const [goatsPoints, setGoatsPoints] = useState();
+  const [lebronPoints, setLebronPoints] = useState();
+  const [kobePoints, setKobePoints] = useState();
+  const [jordanPoints, setJordanPoints] = useState();
 
 
 const baseUrl = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=";
@@ -41,7 +43,7 @@ useEffect(() => {
           //   // Add axios
 
           console.log(stats)
-          setGoatsPoints(stats)
+          setLebronPoints(stats)
         }
       })
       .catch((err) => {
@@ -49,6 +51,55 @@ useEffect(() => {
       });
   }
 }, []);
+
+
+
+useEffect(() => {
+  for (let i = 0; i < kobeId.length; i++) {
+    axios.get(baseUrl + kobeId[i])
+      .then((res) => {
+        let data = res.data.data;
+        console.log(data);
+        let stats = [];
+
+        for (let i = 0; i < data.length; i++) {
+          stats.push(data[i].pts);
+          //   // Add axios
+
+          console.log(stats)
+          setKobePoints(stats)
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+}, []);
+
+
+
+useEffect(() => {
+  for (let i = 0; i < jordanId.length; i++) {
+    axios.get(baseUrl + jordanId[i])
+      .then((res) => {
+        let data = res.data.data;
+        console.log(data);
+        let stats = [];
+
+        for (let i = 0; i < data.length; i++) {
+          stats.push(data[i].pts);
+          //   // Add axios
+
+          console.log(stats)
+          setJordanPoints(stats)
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+}, []);
+
 
 
 
@@ -81,19 +132,19 @@ useEffect(() => {
     datasets: [
       {
         label: "Lebron James",
-        data: goatsPoints,
+        data: lebronPoints,
         borderColor: "#9A04EB",
         backgroundColor: "#9A04EB",
       },
       {
-        label: "Dataset 2",
-        data: [12, 19, 3, 5, 2, 3],
+        label: "Michael Jordan",
+        data: jordanPoints,
         borderColor: "#ED144B",
         backgroundColor: "#ED144B",
       },
       {
-        label: "Dataset 2",
-        data: [12, 19, 3, 5, 2, 3, 7],
+        label: "Kobe Bryant",
+        data: kobePoints,
         borderColor: "#FF6910",
         backgroundColor: "#FF6910",
       },
