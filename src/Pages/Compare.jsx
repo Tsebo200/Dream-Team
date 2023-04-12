@@ -33,29 +33,17 @@ const Compare = ()=>{
             <center><div className="barBox">
             <BarChart/></div></center>
 
+            <div className="pieBox">
+            <PieChart/></div>
            
-
-            {/* <div className="pieBox">
-            <PieChart/>
             <ButtonDarkExample/>
-            </div>
-
             <div className="radarBox">
             <PolarAreaChart />
-            </div> */}
-            
-            <div className="dropdownContainer"></div>
-
-           
             </div>
             
-
-
-            {/* <Link to="/">Dashboard</Link>
-            <Link to="/compare">Comparison</Link>
-            <Link to="/time">Timeline</Link> */}
-           
-
+            <div className="dropdownContainer"></div>
+            </div>
+            
         </div>
     )
 
