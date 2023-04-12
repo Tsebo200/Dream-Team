@@ -209,7 +209,7 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- To see a run through of OpenStack, click below: -->
 
-<!-- [View Demonstration](https://youtu.be/8iZ_rSmcN0E) -->
+[View Demonstration](https://drive.google.com/file/d/1NPY0j63W65k5T3B4179dxDqmp5iEE_l3/view?usp=sharing)
 
 See the [open issues](https://github.com/Tsebo200/Dream-Team/issues) for a list of proposed features (and known issues).
 
