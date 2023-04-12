@@ -131,9 +131,9 @@ Here are a couple of ways to clone this repo:
 
 ## Concept Process
 
-I went with a simple and minimalistic UI design as I wanted a dark mode type of design, thus I utilised dark colours. DreamTeam is a website that is there to help users understand the sport of basketball
+I went with a simple and minimalistic UI design as I wanted a dark mode type of design, thus I utilised dark colours. DreamTeam is a website that is there to help users understand the sport of basketball. The process I took for this project was to explore and figure out things on my own so I took an explorative route for this one as I feel it payed of in my experience as a developer
 
-We really went with a simple and a minimalistic UI design. OpenStack is there to be functional and helpful to any newcomer or veteran of OpenStack. Where they can simply ask, answer and view questions in a quick, concise and effective way. We stick to a simple orange with accents of a baby blue palette, with a light-themed website. A UI trend that really started to rise among web apps, was rounded corners, so we also incorporated that into our design, just to round it off even further.
+
 
 ### Wireframes
 
