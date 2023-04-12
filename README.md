@@ -73,7 +73,9 @@ Welcome to Dream Team! This is an API-generated webpage, it is similar to seeing
 <!-- [<img src="https://www.svgrepo.com/show/331488/mongodb.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=gs_emea_south_africa_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624560&adgroup=115749711783) -->
 
 <!-- [<img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://expressjs.com/) -->
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="6%" height="6%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://reactjs.org/)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="6%" height="6%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://reactjs.org/) 
+
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/800px-Sass_Logo_Color.svg.png" width="6%" height="6%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://sass-lang.com/documentation/) 
 
 <!-- [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png?20170401104355" width="7%" height="7%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://nodejs.org/en/) -->
 
@@ -129,7 +131,9 @@ Here are a couple of ways to clone this repo:
 
 ## Concept Process
 
-<!-- We really went with a simple and a minimalistic UI design. OpenStack is there to be functional and helpful to any newcomer or veteran of OpenStack. Where they can simply ask, answer and view questions in a quick, concise and effective way. We stick to a simple orange with accents of a baby blue palette, with a light-themed website. A UI trend that really started to rise among web apps, was rounded corners, so we also incorporated that into our design, just to round it off even further. -->
+I went with a simple and a minimalistic UI design as I wanted to go with a dark mode type of design, thus I utilised 
+
+We really went with a simple and a minimalistic UI design. OpenStack is there to be functional and helpful to any newcomer or veteran of OpenStack. Where they can simply ask, answer and view questions in a quick, concise and effective way. We stick to a simple orange with accents of a baby blue palette, with a light-themed website. A UI trend that really started to rise among web apps, was rounded corners, so we also incorporated that into our design, just to round it off even further.
 
 ### Wireframes
 
