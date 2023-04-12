@@ -62,7 +62,7 @@
 
 <!-- header image of project -->
 
-![image1][image1]
+<!-- ![image1][image1] -->
 
 ### Project Description
 
@@ -259,8 +259,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 <!-- - [MockupWorld](https://www.mockupworld.co/) -->
 - [Flexy Boxes](https://the-echoplex.net/flexyboxes/)
 
- [image1]: src/Assets/Images/Dashboard.png
- [image2]: src/Assets/Images/Compare.png
+[image1]: src/Assets/Images/Dashboard.png
+[image2]: src/Assets/Images/Compare.png
 [image3]: src/Assets/Images/Timeline.png
 
  <!-- [image1]: client/readme-assets/about-project.png -->
