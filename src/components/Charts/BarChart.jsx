@@ -161,7 +161,7 @@ function BarChart() {
       },
       title: {
         display: true,
-        text: 'compare 3 playas',
+        text: 'Compare playas',
       },
     },
   };
@@ -176,10 +176,10 @@ function BarChart() {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
+        label: 'Playas Points',
         data: kevinData,
         // data: [{x: 10, y: {GiannisBestPoints}}, {x: 15, y: null}, {x: 20, y: 10}],
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        backgroundColor: '#5D76A9',
       },
     ],
   };
