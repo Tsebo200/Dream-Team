@@ -247,8 +247,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 - [Flexy Boxes](https://the-echoplex.net/flexyboxes/)
 
 
-<!-- [image1]: client/readme-assets/about-project.png
-[image2]: client/readme-assets/register.jpg
+ [image1]: client/readme-assets/about-project.png
+<!-- [image2]: client/readme-assets/register.jpg
 [image3]: client/readme-assets/verify.jpg
 [image4]: client/readme-assets/question.jpg
 [image5]: client/readme-assets/answer.jpg
