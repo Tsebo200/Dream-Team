@@ -24,7 +24,7 @@ function BarChart() {
   const Luka = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=132';
   const George = 'https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=172';
   
-    var leaguePlayer = [KD, Giannis, Jokic, Young, Curry, Lavine, Tatum, DeRozan, Luka, George];
+  var leaguePlayer = [KD, Giannis, Jokic, Young, Curry, Lavine, Tatum, DeRozan, Luka, George];
 
     const [kevinData, setKevinData] = useState();
     const [giannisData, setGiannisData] = useState('');
@@ -46,7 +46,7 @@ function BarChart() {
           // let data = res.data.data
           // let kevinBestPoints = res.data.data[23].pts
           
-          let data = res.data;
+          let data = res.data.data;
           console.log(data)
           let stats = [];
 

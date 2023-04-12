@@ -28,6 +28,7 @@ import PieChart from './components/Charts/PieChart';
 // Practice
 import OneAxiosForLoop from './Testings/OneAxiosForLoop';
 import OneAxiosPartTwo from './Testings/OneAxiosPartTwo';
+import DropdownTwo from './components/DropdownTwo';
 
 
 function App() {
@@ -49,7 +50,7 @@ function App() {
         <Route path='/playground' element = {<OneAxiosForLoop/>} />
         <Route path='/sandbox' element={<OneAxiosPartTwo/>}/>
         <Route path='/api' element={<ApiCall/>}/>
-
+        <Route path='/dropdown' element={<DropdownTwo/>}/>
 
 
         {/* Just Practicing to display graphs */}
