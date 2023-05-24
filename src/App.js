@@ -17,10 +17,11 @@ import SignedOut from './Pages/SignedOut';
 import { ApiCall } from './API/ApiCall';
 import NavBar from './components/Navbar';
 import Header from './components/Header';
-import DropdownThree from './components/DropdownThree';
+import DropDown from './components/Dropdown';
+// import DropdownThree from './components/DropdownThree';
 // import LandingContent from './components/LandingContent';
 import Footer from './components/Footer';
-import ButtonDarkExample from './components/Dropdown';
+// import ButtonDarkExample from './components/Dropdown';
 import LeagueLeadersData from './API/leagueLeadersData';
 // Charts
 import PolarAreaChart from './components/Charts/PolarAreaChart';
@@ -29,7 +30,7 @@ import PieChart from './components/Charts/PieChart';
 // Practice
 import OneAxiosForLoop from './Testings/OneAxiosForLoop';
 import OneAxiosPartTwo from './Testings/OneAxiosPartTwo';
-import DropdownTwo from './components/DropdownTwo';
+// import DropdownTwo from './components/DropdownTwo';
 
 
 function App() {
@@ -51,7 +52,8 @@ function App() {
         <Route path='/playground' element = {<OneAxiosForLoop/>} />
         <Route path='/sandbox' element={<OneAxiosPartTwo/>}/>
         <Route path='/api' element={<ApiCall/>}/>
-        <Route path='/dropdown' element={<DropdownThree/>}/>
+        <Route path='/dropdown' element={<DropDown/>}/>
+        {/* <Route path='/dropdown' element={<DropdownThree/>}/> */}
 
 
         {/* Just Practicing to display graphs */}
