@@ -20,7 +20,7 @@ import Header from './components/Header';
 import DropDown from './components/Dropdown';
 // import DropdownThree from './components/DropdownThree';
 // import LandingContent from './components/LandingContent';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 // import ButtonDarkExample from './components/Dropdown';
 import LeagueLeadersData from './API/leagueLeadersData';
 // Charts
@@ -62,7 +62,7 @@ function App() {
         <Route path='/line' element = {<LineChart/>} />
         <Route path='/bar' element = {<BarChart/>} /> */}
     </Routes>
-    <Footer/>
+    {/* <Footer/> */}
 
     </div>
   );

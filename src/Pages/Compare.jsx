@@ -8,14 +8,12 @@ import ButtonDarkExample from "../components/Dropdown";
 import PolarAreaChart from "../components/Charts/PolarAreaChart";
 import BarChart from "../components/Charts/BarChart";
 import PieChart from "../components/Charts/PieChart";
+import Dropdown from "../components/Dropdown";
 
+const Compare = () =>{
+    const [selectedPlayer, setSelectedPlayer] = useState(null);
+    const [selectedPlayer2, setSelectedPlayer2] = useState(null);
 
-
-
-
-  
-
-const Compare = ()=>{
     return(
         <div className="mainContent">
           
@@ -31,10 +29,19 @@ const Compare = ()=>{
             <div className="graphContainer">
 
             <center><div className="barBox">
-            <BarChart/></div></center>
+            {/* <BarChart/> */}
+            <Dropdown setSelectedPlayer={setSelectedPlayer} />
+            <BarChart selectedPlayer={selectedPlayer} />
+            </div></center>
+
+            <center><div className="barBox">
+            {/* <BarChart/> */}
+            <Dropdown setSelectedPlayer={setSelectedPlayer2} />
+            <BarChart selectedPlayer={selectedPlayer2} />
+            </div></center>
 
             <div className="pieBox">
-            <PieChart/></div>
+            <PieChart selectedPlayer={selectedPlayer} secondPlayer={selectedPlayer2} /></div>
            
             <ButtonDarkExample/>
             <div className="radarBox">

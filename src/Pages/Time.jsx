@@ -14,7 +14,7 @@ const Time = () => {
         <div className="mainContent"> 
             <h1>Timeline Page</h1>
             <center> <div className="line-box">
-            {/* <LineChart /> */}
+            <LineChart />
             </div></center>
 
 

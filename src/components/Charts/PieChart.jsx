@@ -6,45 +6,51 @@ import { useState, useEffect } from 'react';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-function PieChart() {
+function PieChart({selectedPlayer, secondPlayer}) {
+  const [orebData, setOrebData] = useState([]);
+  const [secondPlayerOrebData, setSecondPlayerOrebData] = useState([]);
 
-  useEffect(()=>{
-    axios.get("https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=140")
-    .then((res)=>{
-      let data = res.data.data[23]
-      console.log(res)
+  useEffect(() => {
+    if (selectedPlayer) {
+      axios.get(`https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=${selectedPlayer}`)
+        .then((res) => {
+          let totalRebounds = res.data.data.reduce((total, game) => total + game.oreb, 0);
+          setOrebData([totalRebounds]); // Update the state with the total rebounds
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [selectedPlayer]);
 
-    })
-    .catch((err)=>{
-      console.log(err)
-    })
-  })
+  useEffect(() => {
+    if (secondPlayer) {
+      axios.get(`https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=${secondPlayer}`)
+        .then((res) => {
+          let totalRebounds = res.data.data.reduce((total, game) => total + game.oreb, 0);
+          setSecondPlayerOrebData([totalRebounds]);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [secondPlayer]);
+
 
 
    
 
-    const data = {
-        labels: ['Red', 'Blue', 'Yellow'],
-        datasets: [
-          {
-            label: 'offensive Rebounds',
-            data: [12, 19, 3],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-            
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-             
-            ],
-            borderWidth: 1,
-          },
-        ],
-      };
+const data = {
+  labels: ['Game 1', 'Game 2', 'Game 3'],
+  datasets: [
+    {
+      label: 'Offensive Rebounds',
+      data:  [...orebData, ...secondPlayerOrebData], // Use the state variable here
+      backgroundColor: ['#5D76A9', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)'],
+      borderWidth: 1,
+    },
+  ],
+};
 
   return <Pie data={data}/>
 }

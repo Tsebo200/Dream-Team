@@ -1,41 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useEffect, useState} from "react";
 
-
-const Dropdown = () => {
-const [storeName, setStoreName] = useState()
-
+const Dropdown = ({ setSelectedPlayer }) => {
+  const [players, setPlayers] = useState([]);
 
   useEffect(() => {
     axios.get("https://www.balldontlie.io/api/v1/players")
       .then((res) => {
-        let data = res.data.data[1];
-        console.log(data);
-        let name = data.first_name;
-        let surname = data.last_name;
-
-        let playerName = name + " " + surname;
-        console.log(playerName);
-        setStoreName(playerName);
-
-      
-   
+        setPlayers(res.data.data);
       })
       .catch((err) => {
         console.log(err)
       })
   }, [])
 
+  const handleChange = (event) => {
+    setSelectedPlayer(event.target.value);
+  }
+
   return (
-    <>
-    <select>
+    <select onChange={handleChange}>
       <option>--Select--</option>
-      <option>{storeName}</option>
+      {players.map(player => (
+        <option key={player.id} value={player.id}>
+          {player.first_name} {player.last_name}
+        </option>
+      ))}
     </select>
-    
-    </>
   );
 }
 
-export default Dropdown
+export default Dropdown;

@@ -45,7 +45,7 @@ const Landing = () => {
             <p className="introText"> Dream Team is an API driven React website that is based on an NBA API called BallDontLie,
             It has made NBA data consumption as easy as possible as it delivers the data with data visualiser called Chart.js which makes the data more interesting 
             as it has different chart types such as chart types: bar, line, area, pie, bubble, radar, polar, and scatter but Dream Team optimises on the line and bar graphs.<br></br>
-            <br></br>
+            <br/>
             Dream Team has an interactive feature where the visitor can tap on the dropdown to select specific NBA players in order to compare their stats and the stats will be displayed on a bar graph,
             FYI this feature will be found in the comparison page.<br></br>
             

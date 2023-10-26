@@ -17,8 +17,8 @@ return(
         <br></br>
         <div className="navSpacerTwo"></div>
         <Link to="/time"><h2> <ion-icon name="basketball-outline"></ion-icon>Timeline</h2></Link>
-        <div className="navSpacerThree"></div>
-        <Link to="/signedout"><h2 className="signOutText"><ion-icon  name="log-out-outline"></ion-icon>Sign Out</h2></Link>
+        {/* <div className="navSpacerThree"></div>
+        <Link to="/signedout"><h2 className="signOutText"><ion-icon  name="log-out-outline"></ion-icon>Sign Out</h2></Link> */}
     </div> 
 );
 
