@@ -4,7 +4,7 @@ import {Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement,
 import { Line } from "react-chartjs-2";
 import axios from "axios";
 
-function LineChart() {
+function LineChart({ selectedYear }) {
   ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -20,7 +20,7 @@ function LineChart() {
   const [jordanPoints, setJordanPoints] = useState();
 
 
-const baseUrl = "https://www.balldontlie.io/api/v1/stats?season[]=2018&player_ids[]=";
+  const baseUrl = `https://www.balldontlie.io/api/v1/stats?seasons[]=${selectedYear}&player_ids[]=`;
 let lebronId = [237];
 let kobeId = [246];
 let jordanId = [2931];
@@ -35,22 +35,23 @@ useEffect(() => {
     axios.get(baseUrl + lebronId[i])
       .then((res) => {
         let data = res.data.data;
-        console.log(data);
+        // console.log(data);
         let stats = [];
 
         for (let i = 0; i < data.length; i++) {
           stats.push(data[i].pts);
           //   // Add axios
 
-          console.log(stats)
+          // console.log(stats)
           setLebronPoints(stats)
+          console.log(lebronPoints);
         }
       })
       .catch((err) => {
         console.log(err);
       });
   }
-}, []);
+}, [selectedYear]);
 
 
 
@@ -59,22 +60,23 @@ useEffect(() => {
     axios.get(baseUrl + kobeId[i])
       .then((res) => {
         let data = res.data.data;
-        console.log(data);
+        // console.log(data);
         let stats = [];
 
         for (let i = 0; i < data.length; i++) {
           stats.push(data[i].pts);
           //   // Add axios
 
-          console.log(stats)
+          // console.log(stats)
           setKobePoints(stats)
+          console.log(kobePoints);
         }
       })
       .catch((err) => {
         console.log(err);
       });
   }
-}, []);
+}, [selectedYear]);
 
 
 
@@ -83,22 +85,23 @@ useEffect(() => {
     axios.get(baseUrl + jordanId[i])
       .then((res) => {
         let data = res.data.data;
-        console.log(data);
+        // console.log(data);
         let stats = [];
 
         for (let i = 0; i < data.length; i++) {
           stats.push(data[i].pts);
           //   // Add axios
 
-          console.log(stats)
+          // console.log(stats)
           setJordanPoints(stats)
+          console.log(jordanPoints);
         }
       })
       .catch((err) => {
         console.log(err);
       });
   }
-}, []);
+}, [selectedYear]);
 
 
 
@@ -125,6 +128,11 @@ useEffect(() => {
     "May",
     "June",
     "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
   const data = {
