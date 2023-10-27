@@ -41,7 +41,7 @@ function PieChart({selectedPlayer, secondPlayer}) {
    
 
 const data = {
-  labels: ['Game 1', 'Game 2', 'Game 3'],
+  labels: ['Playa 1', 'Playa 2'],
   datasets: [
     {
       label: 'Offensive Rebounds',

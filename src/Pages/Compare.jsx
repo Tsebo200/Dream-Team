@@ -45,7 +45,7 @@ const Compare = () =>{
            
             <ButtonDarkExample/>
             <div className="radarBox">
-            <PolarAreaChart />
+            <PolarAreaChart selectedPlayer={selectedPlayer} secondPlayer={selectedPlayer2}/>
             </div>
             
             <div className="dropdownContainer"></div>
