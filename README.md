@@ -220,7 +220,7 @@ stipulate functionality and improvements that can be implemented in the future.
 
 <!-- To see a run through of OpenStack, click below: -->
 
-[View Demonstration](https://drive.google.com/file/d/1NPY0j63W65k5T3B4179dxDqmp5iEE_l3/view?usp=sharing)
+[View Demonstration](https://drive.google.com/file/d/1Jj1WBifkfNHe1saIXZT8kpZQmQkGhOms/view?usp=sharing)
 
 See the [open issues](https://github.com/Tsebo200/Dream-Team/issues) for a list of proposed features (and known issues).
 
@@ -252,33 +252,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [Figma](https://www.figma.com/)
-<!-- - [Lecturer](https://github.com/MikeMaynard14) -->
-<!-- - [Freepik](https://www.freepik.com) -->
-<!-- - [Miro](https://miro.com/?utm_source=google&utm_medium=cpc&utm_campaign=S|GOO|BRN|ZA|EN-EN|Brand|Exact&utm_adgroup=&utm_custom=18259414532&utm_content=620159863882&utm_term=miro&device=c&location=1028971) -->
-<!-- - [Mongoose Docs](https://mongoosejs.com/docs/api.html) -->
-<!-- - [MockupWorld](https://www.mockupworld.co/) -->
 - [Flexy Boxes](https://the-echoplex.net/flexyboxes/)
 
 [image1]: src/Assets/Images/Dashboard.png
 [image2]: src/Assets/Images/Compare.png
 [image3]: src/Assets/Images/Timeline.png
-
- <!-- [image1]: client/readme-assets/about-project.png -->
- <!-- [image2]: client/readme-assets/register.jpg -->
-<!-- [image3]: client/readme-assets/verify.jpg -->
-<!-- [image4]: client/readme-assets/question.jpg
-[image5]: client/readme-assets/answer.jpg
-[image6]: client/src/Assets/mockups/mockup6.jpg
-[image7]: client/src/Assets/mockups/mockup7.jpg
-[image8]: client/src/Assets/mockups/wireframes.jpg
-[image9]: client/src/Assets/mockups/moodboard.jpg
-[image10]: Images/mockup10.jpg
-[image11]: Images/mockup2.jpg
-[image12]: Images/mockup3.jpg
-[image13]: Images/mockup4.jpg
-[image14]: client/src/Assets/mockups/mockup8.jpg  -->
-
-<!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/tsebo-ramonyalioa-2392381b4/
-[instagram-shield]: https://img.shields.io/badge/-Instagram-black.svg?style=flat-square&logo=instagram&colorB=555
-[instagram-url]: https://www.instagram.com/wiaan.dev/ -->
